@@ -123,12 +123,11 @@ textarea {
 @media (min-width: 1200px) {}
 
 body {
-    background-color: #F2F2F2;
+    background-color: var(--color-background);
 }
 
 .bg-cyan {
-    /* background-color: #65A7F5; */
-    background: linear-gradient(#65A7F5 0%, #94C2F6 100%);
+    background: linear-gradient(var(--color-blue-water) 0%, var(--color-blue-light) 100%);
 }
 
 .text-color-dark {
@@ -145,15 +144,15 @@ body {
 
 .button-submit-search {
     border-radius: 2em;
-    background-color: #65A7F5;
+    background-color: var(--color-blue-water);
     border: none;
-    color: white;
+    color: var(--color-white);
     padding: 0.5em 1.5em 0.5em 1.5em;
     font-size: 0.8em;
 }
 
 .button-submit-search:hover {
-    background-color: #94C2F6;
+    background-color: var(--color-blue-light);
     transition: background-color 0.5s;
 }
 
@@ -189,13 +188,13 @@ body {
 }
 
 .link-custom {
-    color: white;
+    color: var(--color-white);
     transition: color 0.3s;
     font-weight: bold;
 }
 
 .link-custom:hover {
-    color: #C2E8FF;
+    color: var(--color-blue-grey);
     transition: color 0.3s;
     text-decoration: none;
 }
@@ -240,26 +239,27 @@ li {
 
 .btn-twitch{
     background-color:#720e9e9c;
-    color: white;
+    color: var(--color-white);
 }
 .btn-twitter{
     background-color:#55acee;
-    color: white;
+    color: var(--color-white);
 }
 .btn-discord{
     background-color:#2c4762;
-    color: white;
+    color: var(--color-white);
 }
 .btn-contact{
     background-color:#28a745;
-    color: white;
+    color: var(--color-white);
 }
 .btn-twitch:hover,
 .btn-twitter:hover,
 .btn-discord:hover,
 .btn-contact:hover{
     transform: scale(1.1);
-    color: white;
+    color: var(--color-white);
+    transition: transform 0.3s;
 }
 /* ==========================================================================
    Helper classes
