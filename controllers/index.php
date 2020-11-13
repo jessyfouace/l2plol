@@ -15,5 +15,7 @@ function chargerClasse($classname)
 session_start();
 spl_autoload_register('chargerClasse');
 $db = Database::BDD();
+require "../model/config.php";
+$title = 'L2P - Accueil';
 
 require "../views/indexVue.php";
